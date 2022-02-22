@@ -1,18 +1,16 @@
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react';
 import { AnimatePresence } from 'framer-motion';
 import './App.css';
-import Main from './component/Main';
-import QrCode from './component/Qrcode';
+import Header from './component/Header';
+
 function App() {
   return (
     <div className="App">
       <AnimatePresence>
-       <ChakraProvider>
-      <Main />
-      <QrCode/>
-    </ChakraProvider>
-    </AnimatePresence>
-
+        <ChakraProvider>
+          <Header />
+        </ChakraProvider>
+      </AnimatePresence>
     </div>
   );
 }
