@@ -14,7 +14,7 @@ const QrCode = () => {
   <QRCode  
   id="qrCodeId" 
   size={500} 
-  value={'https://www.ivistamed.com/'} 
+  value={'https://www.ivistamed.com/information'} 
   bgColor="white" 
   includeMargin
   fgColor='black'
