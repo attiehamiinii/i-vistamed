@@ -21,7 +21,7 @@ const Main = () => {
   return (
     <>
       <Flex align="center" justify="center">
-        <Stack direction="row" spacing={5} m="2">
+        <Stack direction="row" spacing={5} m={[2,4]} >
           <MotionBox whileHover={{ scale: 1.1 }}>
             <Button
               _hover={{
@@ -52,7 +52,7 @@ const Main = () => {
       </Flex>
 
       <Flex align="center" justify="center">
-        <Stack direction="row" spacing={1} m="3">
+        <Stack direction="row" spacing={1} m={[2,3]}>
           <MotionBox whileHover={{ scale: 1.1 }}>
             <Button
               _hover={{
@@ -84,18 +84,18 @@ const Main = () => {
       </Flex>
       <Flex align="center" justify="center">
         <Collapse in={show}>
-          <Box p={[5, 2]} color="white" mt="1" bg="teal.500" rounded="md" shadow="md" mb="0">
+          <Box p={[2, 4]} color="white" m={[1.5, 3]} bg="teal.500" rounded="md" shadow="md" mb="0">
             <Text fontSize="1.25em" textAlign="center">
               {state.phone}
             </Text>
-            <Text textAlign={['left', 'center']} fontSize="1.25em">
+            <Text textAlign={[ 'center']} fontSize="1.25em">
               {state.address}
             </Text>
           </Box>
         </Collapse>
       </Flex>
       <Flex align="center" justify="center">
-        <Stack direction="row" spacing={4} m="3">
+        <Stack direction="row" spacing={4}m={[2,3]}>
           <MotionBox whileHover={{ scale: 1.1 }}>
             <Button
               _hover={{
@@ -106,7 +106,7 @@ const Main = () => {
                 background: '#EDF2F7',
               }}
               boxShadow="md"
-              rightIcon={<DownloadIcon boxsize="1.25em" />}
+              rightIcon={<DownloadIcon boxsize="1.25em"  />}
               colorScheme="teal"
               variant="outline"
               size="md"
@@ -124,7 +124,7 @@ const Main = () => {
         </Stack>
       </Flex>
       <Flex align="center" justify="center">
-        <Stack direction="row" spacing={4} m="3">
+        <Stack direction="row" spacing={4}m={[2,3]}>
           <MotionBox whileHover={{ scale: 1.1 }}>
             <Button
               _hover={{

@@ -19,9 +19,9 @@ const Footer = () => {
           <HStack
             fontSize="2.5em"
             color="#4A5568"
-            pl="5"
-            m="2"
-            pb="5"
+            pl={[2, 4]}
+            m={[2, 4]}
+            pb={[2, 4]}
             _hover={{
               color: '#2B6CB0',
               bordercolor: '#ED8936',
@@ -40,8 +40,8 @@ const Footer = () => {
           <HStack
             fontSize="2.5em"
             color="#4A5568"
-            pb="5"
-            m="2"
+            pb={[2, 4]}
+            m={[2, 4]}
             _hover={{
               color: '#B83280',
             }}
@@ -63,8 +63,8 @@ const Footer = () => {
           <HStack
             fontSize="2.5em"
             color="#4A5568"
-            pb="5"
-            m="2"
+            pb={[2, 4]}
+            m={[2, 4]}
             _hover={{
               color: '#2B6CB0',
               bordercolor: '#ED8936',
