@@ -1,33 +1,33 @@
 import React, { useState } from 'react';
 import { Box, Flex } from '@chakra-ui/react';
 import { Text, Stack } from '@chakra-ui/react';
-import { Button, Collapse } from '@chakra-ui/react';
+import { Button, Collapse, IconButton } from '@chakra-ui/react';
+import resume from '../assests/home/resume.pdf';
 import { PhoneIcon, DownloadIcon } from '@chakra-ui/icons';
-import { ImSphere, ImCart } from 'react-icons/im';
+import { ImSphere, ImCart, ImPhone, ImLocation2 } from 'react-icons/im';
 import { motion } from 'framer-motion';
 
-
 const Main = () => {
-  const [show, setShow] = React.useState(true)
+  const [show, setShow] = React.useState(true);
   const MotionBox = motion(Box);
 
   const [state] = useState({
     website: 'www.ivistamed.com',
-    phone: 'Phone : (437) 421-7746',
-    address: `Address : 1595 16th Avenue, Suite 301 Richmond Hill, ON L4B 3N9`,
+    phone: '(437) 421-7746',
+    address: `1595 16th Avenue, Suite 301 Richmond Hill, ON L4B 3N9`,
   });
-  
-  const handleToggle = () => setShow(!show)
+
+  const handleToggle = () => setShow(!show);
   return (
     <>
       <Flex align="center" justify="center">
-        <Stack direction="row" spacing={5} m={[2,4]} >
+        <Stack direction="row" spacing={5} m={[2, 4]}>
           <MotionBox whileHover={{ scale: 1.1 }}>
             <Button
               _hover={{
                 background: '#008283',
-                color: '#CBD5E0',
-                bordercolor: '#008283',
+                color: '#ff9900',
+                borderColor: '#ff9900',
               }}
               _focus={{
                 background: '#EDF2F7',
@@ -41,7 +41,7 @@ const Main = () => {
               width="200px"
               border="2px"
               mt="0"
-              borderRadius="20"
+              borderRadius="30"
               onClick={() => window.open('https://www.ivistamed.com', '_blank')}
               fontSize="22px"
             >
@@ -52,12 +52,13 @@ const Main = () => {
       </Flex>
 
       <Flex align="center" justify="center">
-        <Stack direction="row" spacing={1} m={[2,3]}>
+        <Stack direction="row" spacing={1} m={[2, 3]}>
           <MotionBox whileHover={{ scale: 1.1 }}>
             <Button
               _hover={{
                 background: '#008283',
-                color: '#CBD5E0',
+                color: '#ff9900',
+                borderColor: '#ff9900',
               }}
               _focus={{
                 background: '#EDF2F7',
@@ -75,7 +76,7 @@ const Main = () => {
               onClick={handleToggle}
               m="0"
               fontSize="20px"
-              borderRadius="20"
+              borderRadius="30"
             >
               Contact Us
             </Button>
@@ -84,52 +85,68 @@ const Main = () => {
       </Flex>
       <Flex align="center" justify="center">
         <Collapse in={show}>
-          <Box p={[2, 4]} color="white" m={[1.5, 3]} bg="teal.500" rounded="md" shadow="md" mb="0">
-            <Text fontSize="1.25em" textAlign="center">
+          <Box
+            p={[2, 4, 6]}
+            color="white"
+            m={[1.5]}
+            bg="teal.500"
+            rounded="md"
+            shadow="md"
+            mb="0"
+            borderRadius="20"
+          >
+            <Text fontSize="1.25em" textAlign="center" mb="1.5" fontWeight="semibold">
+              <IconButton colorScheme="teal" size="xl" p="2" icon={<ImPhone />} />
               {state.phone}
             </Text>
-            <Text textAlign={[ 'center']} fontSize="1.25em">
+            <Text fontWeight="semibold" textAlign={['center']} fontSize="1.25em">
+              <IconButton p="2" colorScheme="teal" size="xl" icon={<ImLocation2 />} />
               {state.address}
             </Text>
           </Box>
         </Collapse>
       </Flex>
       <Flex align="center" justify="center">
-        <Stack direction="row" spacing={4}m={[2,3]}>
+        <Stack direction="row" spacing={4} m={[2, 3]}>
           <MotionBox whileHover={{ scale: 1.1 }}>
-            <Button
-              _hover={{
-                background: '#008283',
-                color: '#CBD5E0',
-              }}
-              _focus={{
-                background: '#EDF2F7',
-              }}
-              boxShadow="md"
-              rightIcon={<DownloadIcon boxsize="1.25em"  />}
-              colorScheme="teal"
-              variant="outline"
-              size="md"
-              height="48px"
-              width="200px"
-              border="2px"
-              bordercolor="#008283"
-              mb="0"
-              borderRadius="20"
-              fontSize="20px"
-            >
-              Cotolloge
-            </Button>
+            <a href={resume} download="i-Vistamed.pdf">
+              <Button
+                _hover={{
+                  background: '#008283',
+                  color: '#ff9900',
+                  borderColor: '#ff9900',
+                }}
+                _focus={{
+                  background: '#EDF2F7',
+                }}
+                boxShadow="md"
+                rightIcon={<DownloadIcon boxsize="1.25em" />}
+                colorScheme="teal"
+                variant="outline"
+                size="md"
+                height="48px"
+                width="200px"
+                border="2px"
+                bordercolor="#008283"
+                mb="0"
+                borderRadius="30"
+                fontSize="20px"
+                // borderColor='#ff9900'
+              >
+                Cotolloge
+              </Button>
+            </a>
           </MotionBox>
         </Stack>
       </Flex>
       <Flex align="center" justify="center">
-        <Stack direction="row" spacing={4}m={[2,3]}>
+        <Stack direction="row" spacing={4} m={[2, 3]}>
           <MotionBox whileHover={{ scale: 1.1 }}>
             <Button
               _hover={{
                 background: '#008283',
-                color: '#CBD5E0',
+                color: '#ff9900',
+                borderColor: '#ff9900',
               }}
               _focus={{
                 background: '#EDF2F7',
@@ -144,8 +161,9 @@ const Main = () => {
               border="2px"
               bordercolor="#008283"
               mb="0"
-              borderRadius="20"
+              borderRadius="30"
               fontSize="20px"
+              onClick={() => window.open('https://www.ivistamed.com/shop', '_blank')}
             >
               Online Shopping
             </Button>

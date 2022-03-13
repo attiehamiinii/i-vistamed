@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
 .App {
-    background-image: url('./assests/home/background.jpg');
-  background-color: #047474;
   height: auto;
-  padding-bottom:12em;
   width: 100%;
   top: 0;
   left: 0;
-  
 }

@@ -4,7 +4,6 @@ import { HStack } from '@chakra-ui/react';
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
-
 const Footer = () => {
   const MotionBox = motion(Box);
 
@@ -13,14 +12,15 @@ const Footer = () => {
       <Flex align="left" justify="left">
         <MotionBox
           whileHover={{
-            scale:[1,0.7,1],
+            scale: [1, 0.7, 1],
           }}
         >
           <HStack
             fontSize="2.5em"
             color="#4A5568"
             pl={[2, 4]}
-            m={[2, 4]}
+            mt={[4, 2]}
+            ml={[2, 4]}
             pb={[2, 4]}
             _hover={{
               color: '#2B6CB0',
@@ -34,14 +34,15 @@ const Footer = () => {
         </MotionBox>
         <MotionBox
           whileHover={{
-            scale:[1,0.7,1],
+            scale: [1, 0.7, 1],
           }}
         >
           <HStack
             fontSize="2.5em"
             color="#4A5568"
             pb={[2, 4]}
-            m={[2, 4]}
+            mt={[4, 2]}
+            ml={[2, 4]}
             _hover={{
               color: '#B83280',
             }}
@@ -57,14 +58,15 @@ const Footer = () => {
         </MotionBox>
         <MotionBox
           whileHover={{
-            scale:[1,0.7,1],
+            scale: [1, 0.7, 1],
           }}
         >
           <HStack
             fontSize="2.5em"
             color="#4A5568"
             pb={[2, 4]}
-            m={[2, 4]}
+            mt={[4, 2]}
+            ml={[2, 4]}
             _hover={{
               color: '#2B6CB0',
               bordercolor: '#ED8936',

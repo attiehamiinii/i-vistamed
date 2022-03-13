@@ -14,26 +14,19 @@ const Header = () => {
   return (
     <Flex align="center" justify="center" zIndex="1">
       <Box
-        w={[300, 400, 500, 750]}
-        height='auto'
+        w={[350, 500, 750, 950, 1800]}
+        height="auto"
         mx="auto"
         borderRadius="lg"
         overflow="hidden"
-        boxShadow="2xl"
+        boxShadow="lg"
         rounded="md"
         bg="#F7FAFC"
         zIndex="1"
         position="relative"
-        mt={[2, 4]}
+        mt={[2, 4, 6, 8]}
       >
-        <GridItem
-          position="absolute"
-          pt={[2, 4, 6, 8]}
-          top={[2, 4, 6, 8]}
-          zIndex="-1"
-          opacity="0.5"
-          ml={[2, 4, 6, 8]}
-        >
+        <GridItem position="absolute" top={[2, 4, 6, 8]} zIndex="-1" opacity="0.5" right="0">
           <Image w={[300, 400, 500, 750]} src={vistabg} alt="back i-vistaMed" />
         </GridItem>
 
@@ -47,9 +40,9 @@ const Header = () => {
         >
           <Text
             fontFamily="PT Serif"
-            fontSize={{ base: '20px', md: '30px', lg: '45px' }}
+            fontSize={{ base: '20px', md: '30px', lg: '50px' }}
             textAlign={['center']}
-            mt={[1, 2]}
+            mt={[1, 2, 0]}
             p={[1, 2]}
             fontWeight="bold"
             as="h1"
@@ -59,25 +52,25 @@ const Header = () => {
           </Text>
 
           <Text
-            fontFamily="sans-serif"
-            fontSize={{ base: '12px', md: '20px', lg: '20px' }}
+            fontFamily="Roboto Serif "
+            fontSize={{ base: '12px', md: '20px', lg: '25px' }}
             textAlign={['center']}
-            mt={[2]}
+            mt={[1, 2 ,0]}
             as="h1"
-            color="#FFFAF0"
-            fontWeight='semibold'
+            color="#F7FAF5"
+            fontWeight="semibold"
             wordBreak="keep-all"
           >
             We are here to support you & your patients
           </Text>
           <Text
             p={[1, 2]}
-            mt={[1,2]}
+            mt={[1, 2, 0]}
             fontFamily="Roboto Serif"
             textAlign={['center']}
             color="#F7FAFC"
             fontSize={{ base: '14px', md: '20px', lg: '20px' }}
-            wordBreak='keep-all'
+            wordBreak="keep-all"
           >
             Confidently rely on us for your everyday Dental consumables and PPE requirements At
             i-VISTAMED, a wide range of best quality products are at your out-reach at an affordable
@@ -97,8 +90,8 @@ const Header = () => {
             // repeatDelay: 1
           }}
         >
-          <GridItem colSpan={2} mt={[2, 4, 6, 8]} pt="0" align="center">
-            <Image w={[300, 400, 500, 750]} src={Logo} alt="Logo i-vistaMed" />
+          <GridItem colSpan={2} mt={[2, 4, 6]} pt="0" align="center">
+            <Image src={Logo} alt="Logo i-vistaMed" />
           </GridItem>
         </MotionText>
         <Main />
