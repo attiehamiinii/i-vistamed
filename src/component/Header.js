@@ -1,4 +1,4 @@
-/*eslint-disable*/
+
 import React from 'react';
 import { Box, Flex, Image } from '@chakra-ui/react';
 import Logo from '../assests/home/vistalogo.png';
@@ -39,7 +39,7 @@ const Header = () => {
           borderRadius="xl"
         >
           <Text
-            fontFamily="PT Serif"
+            fontFamily="Merriweather"
             fontSize={{ base: '20px', md: '30px', lg: '50px' }}
             textAlign={['center']}
             mt={[1, 2, 0]}
@@ -48,7 +48,7 @@ const Header = () => {
             as="h1"
             color="#F7FAFC"
           >
-            Welcome to i-VISTAMED!
+            Welcome to i-Vistamed
           </Text>
 
           <Text

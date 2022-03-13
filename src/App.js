@@ -1,13 +1,11 @@
-/*eslint-disable*/
 import { ChakraProvider } from '@chakra-ui/react';
 import { AnimatePresence } from 'framer-motion';
-import './App.css';
-import Header from './component/Header';
-import QrCode from './component/Qrcode';
 
-function App() {
+import Header from './component/Header';
+
+const App = () => {
   return (
-    <div className="App">
+    <div style={{height:"auto" , width:"100%",  top:"0", left:"0" }}>
       <AnimatePresence>
         <ChakraProvider>
           <Header />
@@ -15,6 +13,6 @@ function App() {
       </AnimatePresence>
     </div>
   );
-}
+};
 
 export default App;
