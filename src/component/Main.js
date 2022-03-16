@@ -22,7 +22,7 @@ const Main = () => {
     <>
       <Flex align="center" justify="center">
         <Stack direction="row" spacing={5} m={[2, 4]}>
-          <MotionBox whileHover={{ scale: 1.1 }}>
+          <MotionBox whileTap={{ scale: 1.1 }}>
             <Button
               _hover={{
                 background: '#008283',
@@ -53,7 +53,7 @@ const Main = () => {
 
       <Flex align="center" justify="center">
         <Stack direction="row" spacing={1} m={[2, 3]}>
-          <MotionBox whileHover={{ scale: 1.1 }}>
+          <MotionBox whileTap={{ scale: 1.1 }}>
             <Button
               _hover={{
                 background: '#008283',
@@ -108,7 +108,7 @@ const Main = () => {
       </Flex>
       <Flex align="center" justify="center">
         <Stack direction="row" spacing={4} m={[2, 3]}>
-          <MotionBox whileHover={{ scale: 1.1 }}>
+          <MotionBox whileTap={{ scale: 1.1 }}>
             <a href={resume} download="i-Vistamed.pdf">
               <Button
                 _hover={{
@@ -141,7 +141,7 @@ const Main = () => {
       </Flex>
       <Flex align="center" justify="center">
         <Stack direction="row" spacing={4} m={[2, 3]}>
-          <MotionBox whileHover={{ scale: 1.1 }}>
+          <MotionBox whileTap={{ scale: 1.1 }}>
             <Button
               _hover={{
                 background: '#008283',
@@ -163,7 +163,7 @@ const Main = () => {
               mb="0"
               borderRadius="30"
               fontSize="20px"
-              onClick={() => window.open('https://www.ivistamed.com/shop', '_blank')}
+              onClick={() => window.open('https://www.ivistamed.com/our-products/', '_blank')}
             >
               Online Shopping
             </Button>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Box, Flex, Image } from '@chakra-ui/react';
 import Logo from '../assests/home/vistalogo.png';
@@ -14,7 +13,7 @@ const Header = () => {
   return (
     <Flex align="center" justify="center" zIndex="1">
       <Box
-        w={[350, 500, 750, 950, 1800]}
+        w={[400, 750, 950, 1024]}
         height="auto"
         mx="auto"
         borderRadius="lg"
@@ -48,21 +47,24 @@ const Header = () => {
             as="h1"
             color="#F7FAFC"
           >
-            Welcome to i-Vistamed
+            Welcome to i-VISTAMED
           </Text>
 
           <Text
-            fontFamily="Roboto Serif "
-            fontSize={{ base: '12px', md: '20px', lg: '25px' }}
+            fontFamily="Fira Sans Condensed "
+            fontStyle="italic"
+            fontSize={{ base: '12px', md: '26px', lg: '35px' }}
             textAlign={['center']}
-            mt={[1, 2 ,0]}
+            mt={[1, 2, 0]}
             as="h1"
-            color="#F7FAF5"
-            fontWeight="semibold"
+            color="#ff9900"
+            fontWeight="thin"
             wordBreak="keep-all"
           >
-            We are here to support you & your patients
+            TRUST US!{' '}
+            <span style={{ color: 'white', fontStyle: 'normal' }}> WE'VE GOT YOUR BACK</span>
           </Text>
+
           <Text
             p={[1, 2]}
             mt={[1, 2, 0]}
@@ -72,14 +74,16 @@ const Header = () => {
             fontSize={{ base: '14px', md: '20px', lg: '20px' }}
             wordBreak="keep-all"
           >
-            Confidently rely on us for your everyday Dental consumables and PPE requirements At
+            Confidently rely on us for your everyday{' '}
+            <span style={{ color: '#ff9900', fontStyle: 'italic' }}>Dental consumables</span> and{' '}
+            <span style={{ color: '#ff9900', fontStyle: 'italic' }}>PPE</span> requirements At
             i-VISTAMED, a wide range of best quality products are at your out-reach at an affordable
             price.
           </Text>
         </Box>
         <MotionText
           animate={{
-            scale: [0, 1.2, 1, 1],
+            scale: [0, 1.3, 1, 1],
           }}
           transition={{
             duration: 1.5,

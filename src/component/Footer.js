@@ -9,9 +9,9 @@ const Footer = () => {
 
   return (
     <>
-      <Flex align="left" justify="left">
+      <Flex align='center'>
         <MotionBox
-          whileHover={{
+          whileTap={{
             scale: [1, 0.7, 1],
           }}
         >
@@ -33,7 +33,7 @@ const Footer = () => {
           </HStack>
         </MotionBox>
         <MotionBox
-          whileHover={{
+         whileTap={{
             scale: [1, 0.7, 1],
           }}
         >
@@ -57,7 +57,7 @@ const Footer = () => {
           </HStack>
         </MotionBox>
         <MotionBox
-          whileHover={{
+          whileTap={{
             scale: [1, 0.7, 1],
           }}
         >
